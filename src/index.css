@@ -1,0 +1,253 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+ 
+  background-color: #9ebebb9f ;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+
+.glass{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.ritucover{
+  background-image: url(assets/ritu.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}.home1{
+  background-image: url(assets/home1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home2{
+  background-image: url(assets/home3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home3{
+  background-image: url(assets/home2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #ffffff;
+  /* cursor: pointer; */
+  /* border: 1px solid #e8e8e8; */
+  transition: all 0.3s;
+  /* box-shadow: 6px 6px 12px #ffffff; */
+}
+
+
+.btn:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #537f3c;
+}
+.btn:hover {
+  box-shadow: 6px 6px 12px #ffffff;
+}
+
+.btn2 {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #537f3c;
+  /* cursor: pointer; */
+  border: 1px solid #e8e8e8;
+  color: white;
+  transition: all 0.3s;
+}
+
+.btn2:hover {
+  border: 1px solid white;
+  box-shadow: 6px 6px 12px #ffffff;
+}
+
+.btn2:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
+.btn3 {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #537f3c;
+  /* cursor: pointer; */
+  border: 1px solid #e8e8e8;
+  color: white;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.btn3:hover {
+  border: 1px solid #537f3c;
+}
+
+.btn3:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
+
+.border-right{
+  border-right: 2px solid black;
+}
+
+/* ratings */
+
+.rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ffa723;
+}
+
+.rating:not(:checked) > label:before {
+  content: '★';
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #ffa723;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ffa723;
+}
+
+.rating > input:checked ~ label {
+  color: #ffa723;
+}
+
+/* social */
+.socials-container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px 0px;
+}
+.social {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgb(194, 194, 194);
+}
+.twitter:hover {
+  background: linear-gradient(45deg, #66757f, #00acee, #36daff, #dbedff);
+}
+.facebook:hover {
+  background: linear-gradient(45deg, #134ac0, #316ff6, #78a3ff);
+}
+.google-plus:hover {
+  background: linear-gradient(45deg, #872419, #db4a39, #ff7061);
+}
+.instagram:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.social svg {
+  fill: white;
+  height: 20px;
+}
+
+
+.card {
+  width: 240px;
+  height: 300px;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+ }
+
+ .couples {
+  background-image: url(assets/othersimg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mens {
+  background-image: url(assets/homehair.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.womens {
+  background-image: url(assets/g11.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kids {
+  background-image: url(assets/bridal.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
